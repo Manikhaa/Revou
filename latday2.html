@@ -2,17 +2,86 @@
     <head>
         <title>Test Html</title>
         <body>
-        <form>
+            <style>
+                .container{
+                   
+                    display: flex;
+                    justify-content: flex-end;
+                    
+                }
+                .container>table{
+                    margin: 10px;
+                    text-align: center;
+                    font-size: 14sp;
+                    color: black;
+                    margin-right: 90px;   
+                    
+                }
+                .formulir{
+                    
+                    display: flex;
+                    justify-content: flex-start;
+                    
+                }
+                .formulir>#latab{
+                   
+                    text-align: center;
+                    font-size: 14sp;
+                    color: black;
+                    margin-left: auto;
+                    margin-right: 90px;
+                }
+                .formulir>{
+                    background-color: gray;
+                }
+                th{
+                    background-color: gray;
+                }
+                .logo{
+                    width: 80px;
+                    height: 80px;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-right: auto;
+                    margin-left: 20px;
+
+                }
+                footer{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                
+            </style>
+        </head>
+            <hr>
+            <nav class="container">
+                <div class="logo">
+                    <img src="revologo.png" alt="">
+                </div>
+                <table border="1">
+                <tr>
+                <td>Home</td>
+                <td>My Profile</td>
+                <td>Portofolio</td>
+                <td>Message Us</td>
+                </tr>
+                </table>
+            </nav>
+            <hr>
             <h1>Form Belajar</h1>
             <p>Ini adalah website latihan pertama</p>
-            <table>
+            <nav class="formulir">
+            <form>
+            <table >
                 <tr>
                     <td>Nama :</td>
                     <td><input type="text"></td>
                 </tr>
                 <tr>
                     <td>Tanggal Lahir :</td>
-                    <td><input type="text"></td>
+                    <td><input type="date"></td>
                 </tr>
                 <tr>
                     <td>Jenis Kelamin :</td>
@@ -26,9 +95,9 @@
                     <td><button>Submit</button></td>
                 </tr>
             </table>
+            </form>
 
-            <h1>LATIHAN TABEL</h1>
-            <table border="1">
+            <table border="1" id="latab">
                 <tr>
                     <th>Nama</th>
                     <th>Tanggal Lahir</th>
@@ -55,8 +124,12 @@
                     <td></td>
                 </tr>
             </table>
-            
-        </form>
+            </nav> 
+           
         </body>
-    </head>
+        <hr>
+        <footer>
+            <p>Created by Revou - Manikha</p>
+        </footer>
+    
 </html>
