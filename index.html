@@ -1,0 +1,119 @@
+<html>
+    <title></title>
+    <head>
+        <link rel="stylesheet" href="index.css">
+      
+    </head>
+    <body>
+        
+        <header class="tabatas">
+            <img class="logo" src="asset/revologo.png" alt="">
+            <div class="menu">
+                <a href="#badan">Home</a>
+                <a href="#about">About Us</a>
+                <a href="profile.html">Our Profile</a>
+                <a href="#message">Message Us</a>
+            </div>
+                
+        </header>
+
+        <section class="badan" id="badan">
+            <p>Hi <span id="nama"></span> <br><small>Selamat Datang di Pradamel</small> </p>
+        </section>
+
+        <script>
+            var nama = prompt("Masukan nama kamu");
+            document.getElementById("nama").innerText=nama;
+        </script>
+
+        <section class="about" id="about">
+            <img src="asset/about.jpg" alt="">
+            
+            <div class="aboutus">
+                <h2 >Mengenal Pradamel</h2>
+                <p>Pradamel adalah kelas pengembangan kompetensi kerja dan kewirausahaan yang 
+                ditujukan untuk pencari kerja, 
+                 pekerja/buruh yang terkena pemutusan hubungan kerja 
+                    atau pekerja yang membutuhkan peningkatan kompetensi, termasuk pelaku usaha mikro dan 
+                    kecil. 
+                Kami Percaya bahwa masyarakat Indonesia sesungguhnya ingin selalu meningkatkan kemampuannya.
+                     Kelas ini didesaom sebagai sebuah produk dan dikemas sedemikian rupa agar memberikan nilai bagi para 
+                     pengguna sekaligus memberikan nilai bagi sektor swasta. bertujuan untuk mengembangkan kompetensi angkatan kerja, meningkatkan produktivitas dan daya saing angkatan kerja, serta mengembangkan kewirausahaan.
+                     pekerja/buruh yang membutuhkan peningkatan kompetensi kerja, seperti pekerja/buruh yang dirumahkan dan pekerja bukan penerima upah, termasuk pelaku usaha mikro dan kecil. Untuk itu, kamu harus memenuhi persyaratan sebagai warga negara Indonesia berusia paling rendah 18 (delapan belas) tahun dan paling tinggi 64 (enam puluh empat) tahun yang tidak sedang mengikuti pendidikan formal.
+                     </p>
+            </div>
+        </section>
+        
+
+        
+
+        <section id="message">
+        <center><h1>Message Us</h1></center>  
+        <div class="formulir" >
+              
+            <form onsubmit="return validateForm()" name="message-form">
+            <table class="tabelformulir">
+                <tr>
+                    <td>Nama </td>
+                    <td>:</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir </td>
+                    <td>:</td>
+                    <td><input type="date" name="ttl"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin </td>
+                    <td>:</td>
+                    <td><input type="radio" name="Jk" value="laki-laki">Laki-Laki <input type="radio" name="Jk" value="Perempuan">Perempuan</td>
+                </tr>
+                <tr>
+                    <td>Pesan </td>
+                    <td>:</td>
+                    <td><textarea name="pesan"> </textarea></td>
+                </tr>
+                <tr>
+                    <td id="tombol"><button>Submit</button></td>
+                </tr>
+            </table>
+            </form>
+            <script>
+                function validateForm(){
+                    var nama = document.forms["message-form"]["nama"].value;
+                    var ttl = document.forms["message-form"]["ttl"].value;
+                    var Jk = document.forms["message-form"]["Jk"].value;
+                    var pesan = document.forms["message-form"]["pesan"].value;
+                    if(nama == "" || ttl == "" || Jk == "" || pesan == ""){
+                        alert("Input tidak boleh kosong");
+                        return false;
+                    }
+
+                    document.getElementById("sender-nama").innerText = nama;
+                    document.getElementById("sender-ttl").innerText = ttl;
+                    document.getElementById("sender-Jk").innerText = Jk;
+                    document.getElementById("sender-pesan").innerText = pesan;
+                    return false;
+                }
+            </script>
+
+            <div class="form-output">
+                <p>Nama: <span id="sender-nama"></span></p><br>
+                <p>Tempat, Tanggal Lahir: <span id="sender-ttl"></span></p><br>
+                <p>Jenis Kelamin: <span id="sender-Jk"></span></p><br>
+                <p>Pesan: <span id="sender-pesan"></span></p><br>
+
+            </div>
+            
+            <!-- <div class="isi">
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div> -->
+
+        </div>
+        </section>
+        
+    </body>
+    <footer>
+        <p>RevoU</p>
+    </footer>
+</html>

@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .tabatas{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* body{
+    margin: 0;
+    padding: 0;   
+} */
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.tabatas{
+    background: rgba(0, 0, 0, 0.8);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;   
+    padding-top: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div{
+    /* margin-left: 20px; */
+    padding-right: 20px;
+    
+    /* justify-content: flex-end; */
+    gap: 30px;
+}
+div>a{
+    color:#fff;
+}
+div>p{
+    margin-top: 0px;
+    justify-content: flex-start;
+
+}
+
+
+.badan{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    background: url("asset/hero-bg.jpg") top center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width   : 1340px;
+    height: 800px;
+    
+}
+.badan>img{ 
+    background-position: center;
+    width   : 1200px;
+    height: 578px;
+}
+.badan>p{
+    color: #fff;
+    text-align: center;
+    padding-top: 250px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.formulir{
+    display: flex;
+    margin: auto;
+    gap: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.formulir>#tombol{
+    width: 100px;
+}
+/* about us */
+.about{
+    display: flex;
+    /* padding-top: 70; */
+    font-family: Lucida;
+    font-size: 20px;
+    /* padding-left: 15; */
+    gap: 10px
+    
+}
+.about>img{
+    width: 500;
+    height: 500;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 20%;
+    float: right;
+    
+}
+.aboutus h2{
+    margin-top:100px;
+}
+.aboutus{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.aboutus p{
+    float: left;
+}
+/* message */
+#message{
+    width: 100%;
+    height: 100%;
+    background: url("asset/message.jpg") top center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    width: 1340;
+    height: 578px;
+    padding-top: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+   
+
+}
+#message>center{
+    padding-top: 20px;
+}
+/* .formulir{
+    display: flex; 
+    margin-left:10px;
+    gap: 100px;
+    margin-top: 65;   
+} */
+    
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+td{
+    padding: 10px;
+}
+input{
+    margin-bottom: 10px;
+}
+
